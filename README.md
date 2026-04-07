@@ -20,6 +20,13 @@ Architecture description for `davidfowl/tally`, a local-first CLI for transactio
 - Upstream repository: `https://github.com/davidfowl/tally`
 - Description file: `davidfowl-tally-iso42010/README.md`
 
+### `microsoft-typeagent-iso42010`
+
+Architecture description for `microsoft/TypeAgent`, a dispatcher-centered multi-host agent platform exploring structured prompting, explanation-driven caching, and Structured RAG memory.
+
+- Upstream repository: `https://github.com/microsoft/TypeAgent`
+- Description file: `microsoft-typeagent-iso42010/README.md`
+
 ## Scope
 
 The architecture descriptions in this repository typically cover:
