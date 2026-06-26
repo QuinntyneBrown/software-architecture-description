@@ -426,7 +426,7 @@ sequenceDiagram
     Steps->>Steps: InitializeBlockchain, InitializeBlockTree, LoadGenesisBlock
     Steps->>Steps: InitializeNetwork (+ plugin InitNetworkProtocol), StartBlockProcessor
     Steps->>Steps: RegisterRpcModules + RegisterPluginRpcModules, StartRpc, StartMonitoring
-    Runner-->>Main: running; await ProcessExit
+    Runner-->>Main: running, await ProcessExit
 ```
 
 The init layer expresses startup as a graph of ~22 `IStep` classes (`BuiltInStepsModule.BuiltInSteps`), ordered by `[RunnerStepDependencies]` attributes and executed concurrently subject to those dependencies — not as a linear sequence. Representative steps: `ApplyMemoryHint`, `InitializeBlockchain`, `InitializeBlockTree`, `LoadGenesisBlock`, `InitializeNetwork`, `StartBlockProcessor`, `InitializeBlockProducer`, `RegisterRpcModules`, `RegisterPluginRpcModules`, `StartRpc`, `StartMonitoring`.
