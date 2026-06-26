@@ -27,6 +27,13 @@ Architecture description for `microsoft/TypeAgent`, a dispatcher-centered multi-
 - Upstream repository: `https://github.com/microsoft/TypeAgent`
 - Description file: `microsoft-typeagent-iso42010/README.md`
 
+### `nethermindeth-nethermind-iso42010`
+
+Architecture description for `NethermindEth/nethermind`, a high-performance, plugin-extensible Ethereum execution client built on .NET with a dependency-injected composition root, a function-pointer-dispatched EVM, RocksDB-backed pruning-aware state, and a JWT-authenticated Engine API for the consensus layer.
+
+- Upstream repository: `https://github.com/NethermindEth/nethermind`
+- Description file: `nethermindeth-nethermind-iso42010/README.md`
+
 ## Scope
 
 The architecture descriptions in this repository typically cover:
